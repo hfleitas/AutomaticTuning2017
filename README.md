@@ -114,7 +114,7 @@ I use [Github](http://github.com/) for versioning. For the versions available, s
 
 ## Authors
 
-* **Hiram Fleitas** - *Repo - AutomaticTuning2017* - [Hiram Fleitas](https://github.com/hfleitas)
+* **Hiram Fleitas** - *This Repo - AutomaticTuning2017* - [Hiram Fleitas](https://github.com/hfleitas)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
