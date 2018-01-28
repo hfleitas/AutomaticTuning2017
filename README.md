@@ -124,4 +124,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* [Bob Ward](https://github.com/rgward)
+* [Bob Ward](https://github.com/rgward) - Principal Architect (Microsoft)
