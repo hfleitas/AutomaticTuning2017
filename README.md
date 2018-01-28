@@ -30,20 +30,35 @@ Copy ostress.exe into C:\Deployments\demo3_sqlserverkeepsyoufast
 
 Download latest release WideWorldImporters-Full.bak [121 MB] and restore it. (If you already have you may skip this step)
 https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/wide-world-importers
+See file: restore_wwi.sql
 
 ```
 --verify
-restore filelistonly from disk = 'c:\downloads\wideworldimporters-full.bak'
+restore filelistonly from disk = 'c:\users\hfleitas\downloads\wideworldimporters-full.bak'
 go 
 --set your own paths
-restore database WideWordImporters from disk = 'c:\downloads\wideworldimporters-full.bak'
-with move 'wwi_primary' to 'd:\data\wideworldimporters.mdf' 
-,move 'wwi_userdata' to 'd:\data\wideworldimporters_userdata.ndf'
-,move 'wwi_log' to 'd:\data\wideworldimporters.ldf'
-,move 'wwi_inmemory_data_1' to 'd:\data\wideworldimporters_inmemory_data_1'
+restore database [WideWordImporters] from disk = 'c:\users\hfleitas\downloads\wideworldimporters-full.bak'
+with move 'wwi_primary' to 'C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\wideworldimporters.mdf' 
+,move 'wwi_userdata' to 'C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\wideworldimporters_userdata.ndf'
+,move 'wwi_log' to 'C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\wideworldimporters.ldf'
+,move 'wwi_inmemory_data_1' to 'C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\wideworldimporters_inmemory_data_1'
 ,stats = 25
 go
+--rollup compat to 2017
+alter database [WideWordImporters] set compatibility_level = 140
+go
+--update stats
+use [WideWordImporters]
+go
+EXEC sp_updatestats
 ```
+
+1. Run the script setup.sql to install some stored procedures in the WideWorldImporters database
+
+2. Walk through the steps in demo-full.sql to show how Auto Plan Correction Works
+
+3. Bring up the Query Store Reports for Queries with Forced Plans to see how the plan was changed and how we forced the faster one
+
 
 End with state on FLGP is ON:
 
