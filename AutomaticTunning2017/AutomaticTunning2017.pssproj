@@ -1,0 +1,66 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6CAFC0C6-A428-4d30-A9F9-700E829FEA51</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyApplication</RootNamespace>
+    <AssemblyName>MyApplication</AssemblyName>
+    <Name>AutomaticTunning2017</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="2017AutomaticTuningDemo.PNG" />
+    <Content Include="auto_tune.cmd" />
+    <Content Include="auto_tune.sql" />
+    <Content Include="ComparedPlans.png" />
+    <Content Include="ComparedPlansDetail.png" />
+    <Content Include="demo-full.sql" />
+    <Content Include="demo-full.bak.sql" />
+    <Content Include="HammerDB2016MonsterPhysical-HPDL380Gen9-CPUs2x40ht384RAMonNetApp-IM200Ktpm.png" />
+    <Content Include="HammerDB2017vm4vCPUs64RAMonTiTri-IM270Ktpm.png" />
+    <Content Include="initialize.cmd" />
+    <Content Include="initialize.sql" />
+    <Content Include="ostress.exe" />
+    <Content Include="Perfmon1.png" />
+    <Content Include="Perfmon2.PNG" />
+    <Content Include="Perfmon3.PNG" />
+    <Content Include="query_store_waits.sql" />
+    <Content Include="readme.md" />
+    <Content Include="recommendations.sql" />
+    <Content Include="regression.cmd" />
+    <Content Include="Regression.pesession" />
+    <Content Include="regression.sql" />
+    <Content Include="Regression.sqlplan" />
+    <Content Include="report.cmd" />
+    <Content Include="Report.pesession" />
+    <Content Include="report.sql" />
+    <Content Include="Report.sqlplan" />
+    <Content Include="repro_setup.cmd" />
+    <Content Include="restore_wwi.sql" />
+    <Content Include="setup.sql" />
+    <Content Include="setup_repro.cmd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutomaticTunning2017.ps1" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="Build" />
+  <Import Project="$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets" Condition="Exists('$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets')" />
+</Project>

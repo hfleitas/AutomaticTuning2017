@@ -1,0 +1,1 @@
+ostress -E -Slocalhost -ireport.sql -n8 -r10000 -q
