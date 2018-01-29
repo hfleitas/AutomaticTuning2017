@@ -1,4 +1,19 @@
-﻿use WideWorldImporters
+﻿USE [master]
+GO
+ALTER DATABASE [WideWorldImporters] SET QUERY_STORE = ON
+GO
+ALTER DATABASE [WideWorldImporters] SET QUERY_STORE (OPERATION_MODE = READ_WRITE)
+GO
+--Kept Defaults:
+--dataflush interval (minutes) 50
+--statistics colleciton interval 15 minutes
+--max size (MB) 500
+--query store capture mode Auto
+--size based cleanup mode Auto
+--stale query threshold (days) 30
+go
+
+use WideWorldImporters
 go
 DROP procedure if exists [dbo].[initialize]
 go
