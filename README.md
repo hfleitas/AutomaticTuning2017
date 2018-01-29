@@ -28,9 +28,9 @@ Install RML Utilities: https://support.microsoft.com/en-us/help/944837/descripti
 Copy ostress.exe into C:\Deployments\demo3_sqlserverkeepsyoufast 
 ```
 
-Download latest release WideWorldImporters-Full.bak [121 MB] and restore it. (If you already have you may skip this step)
-https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/wide-world-importers
-See file: restore_wwi.sql
+Download latest release [WideWorldImporters-Full.bak [121 MB]](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/wide-world-importers) and restore it. (If you already have you may skip this step)
+
+See file: [restore_wwi.sql](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTunning2017/restore_wwi.sql)
 
 ```
 --verify
@@ -53,9 +53,9 @@ go
 EXEC sp_updatestats
 ```
 
-1. Run the script setup.sql to install some stored procedures in the WideWorldImporters database
+1. Run the script [setup.sql]() to install some stored procedures in the WideWorldImporters database
 
-2. Walk through the steps in demo-full.sql to show how Auto Plan Correction Works
+2. Walk through the steps in [demo-full.sql]() to show how Auto Plan Correction Works
 
 3. Bring up the Query Store Reports for Queries with Forced Plans to see how the plan was changed and how we forced the faster one
 
@@ -90,12 +90,12 @@ This test will illustrate a regression of batch requests per second due to a new
 
 ### Example
 
-See screenshot file(s): 2017AutomaticTuningDemo.PNG or Perfmon3.PNG.
+See screenshot file(s): [2017AutomaticTuningDemo.PNG](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTunning2017/2017AutomaticTuningDemo.PNG) or [Perfmon3.PNG](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTunning2017/Perfmon3.PNG).
 
 ## Deployment
 
-Place contents of https://github.com/hfleitas/AutomaticTunning2017/tree/master/AutomaticTunning2017 
-in C:\Deployments\demo3_sqlserverkeepsyoufast 
+Place contents of https://github.com/hfleitas/AutomaticTunning2017/tree/master/AutomaticTunning2017 in C:\Deployments\demo3_sqlserverkeepsyoufast 
+
 Follow instructions.
 
 ## Built With
@@ -106,17 +106,17 @@ Follow instructions.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/hfleitas/AutomaticTunning2017) for code of conduct, and the process for submitting pull requests.
+Please read [CONTRIBUTING.md](https://github.com/hfleitas/AutomaticTuning2017) for code of conduct, and the process for submitting pull requests.
 
 ## Versioning
 
-I use [Github](http://github.com/) for versioning. For the versions available, see the [tags on this repository](https://github.com/hfleitas/AutomaticTunning2017/tags). 
+I use [Github](http://github.com/) for versioning. For the versions available, see the [tags on this repository](https://github.com/hfleitas/AutomaticTuning2017/tags). 
 
 ## Authors
 
 * **Hiram Fleitas** - *This Repo - AutomaticTuning2017* - [Hiram Fleitas](https://github.com/hfleitas)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/hfleitas/AutomaticTuning2017/contributors) who participated in this project.
 
 ## License
 
