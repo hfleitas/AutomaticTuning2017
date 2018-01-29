@@ -41,6 +41,7 @@
     <Content Include="ostress.exe" />
     <Content Include="Perfmon1.png" />
     <Content Include="Perfmon2.PNG" />
+    <Content Include="Perfmon3.PNG" />
     <Content Include="query_store_waits.sql" />
     <Content Include="readme.md" />
     <Content Include="recommendations.sql" />
