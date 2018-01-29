@@ -53,9 +53,9 @@ go
 EXEC sp_updatestats
 ```
 
-1. Run the script [setup.sql]() to install some stored procedures in the WideWorldImporters database
+1. Run the script [setup.sql](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTunning2017/setup.sql) to install some stored procedures in the WideWorldImporters database
 
-2. Walk through the steps in [demo-full.sql]() to show how Auto Plan Correction Works
+2. Walk through the steps in [demo-full.sql](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTunning2017/demo-full.sql) to show how Auto Plan Correction Works
 
 3. Bring up the Query Store Reports for Queries with Forced Plans to see how the plan was changed and how we forced the faster one
 
@@ -90,7 +90,7 @@ This test will illustrate a regression of batch requests per second due to a new
 
 ### Example
 
-See screenshot file(s): [2017AutomaticTuningDemo.PNG](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTunning2017/2017AutomaticTuningDemo.PNG) or [Perfmon3.PNG](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTunning2017/Perfmon3.PNG).
+See screenshot file(s): [2017AutomaticTuningDemo.PNG](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTuning2017/2017AutomaticTuningDemo.PNG) or [Perfmon3.PNG](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTuning2017/Perfmon3.PNG).
 
 ## Deployment
 
