@@ -58,9 +58,6 @@
     <Content Include="setup.sql" />
     <Content Include="setup_repro.cmd" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AutomaticTunning2017.ps1" />
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
   <Import Project="$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets" Condition="Exists('$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets')" />

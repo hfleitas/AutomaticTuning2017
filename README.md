@@ -30,7 +30,7 @@ Copy ostress.exe into C:\Deployments\demo3_sqlserverkeepsyoufast
 
 Download latest release [WideWorldImporters-Full.bak [121 MB]](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/wide-world-importers) and restore it. (If you already have you may skip this step)
 
-See file: [restore_wwi.sql](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTunning2017/restore_wwi.sql)
+See file: [restore_wwi.sql](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTuning2017/restore_wwi.sql)
 
 ```
 --verify
@@ -53,9 +53,9 @@ go
 EXEC sp_updatestats
 ```
 
-1. Run the script [setup.sql](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTunning2017/setup.sql) to install some stored procedures in the WideWorldImporters database
+1. Run the script [setup.sql](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTuning2017/setup.sql) to install some stored procedures in the WideWorldImporters database
 
-2. Walk through the steps in [demo-full.sql](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTunning2017/demo-full.sql) to show how Auto Plan Correction Works
+2. Walk through the steps in [demo-full.sql](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTuning2017/demo-full.sql) to show how Auto Plan Correction Works
 
 3. Bring up the Query Store Reports for Queries with Forced Plans to see how the plan was changed and how we forced the faster one
 
@@ -94,7 +94,7 @@ See screenshot file(s): [2017AutomaticTuningDemo.PNG](https://github.com/hfleita
 
 ## Deployment
 
-Place contents of https://github.com/hfleitas/AutomaticTunning2017/tree/master/AutomaticTunning2017 in C:\Deployments\demo3_sqlserverkeepsyoufast 
+Place contents of https://github.com/hfleitas/AutomaticTuning2017/tree/master/AutomaticTuning2017 in C:\Deployments\demo3_sqlserverkeepsyoufast 
 
 Follow instructions.
 
