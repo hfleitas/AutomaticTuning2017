@@ -1,4 +1,4 @@
-# Automatic Tunning 2017
+# Automatic Tuning 2017
 
 Pass Summit 2017 Summary Presentation - SQL Server 2017 Automatic Tuning
 
@@ -86,7 +86,7 @@ perfom ## performance monitor, added SQLServer:SQL Statistics:Batch Requests/sec
 
 ### Purpose
 
-This test will illustrate a regression of batch requests per second due to a new compiled execution plan with parameter sniffing, and will force the last good plan by automatically tunning SQL Server to resolve the regression. The intention is to relieve the reactive emergency/oncall support model by aliviating a need for manual intervention. It's advisable to monitor the system for forced plans and revist why there occurred to prevent the issue if possible.
+This test will illustrate a regression of batch requests per second due to a new compiled execution plan with parameter sniffing, and will force the last good plan by automatically Tuning SQL Server to resolve the regression. The intention is to relieve the reactive emergency/oncall support model by aliviating a need for manual intervention. It's advisable to monitor the system for forced plans and revist why there occurred to prevent the issue if possible.
 
 ### Example
 
