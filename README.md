@@ -92,6 +92,9 @@ This test will illustrate a regression of batch requests per second due to a new
 
 See screenshot file(s): [2017AutomaticTuningDemo.PNG](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTuning2017/2017AutomaticTuningDemo.PNG) or [Perfmon3.PNG](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTuning2017/Perfmon3.PNG).
 
+<img src='https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTuning2017/Perfmon3.PNG' width='400px'>
+
+
 ## Deployment
 
 Place contents of https://github.com/hfleitas/AutomaticTuning2017/tree/master/AutomaticTuning2017 in C:\Deployments\demo3_sqlserverkeepsyoufast 
