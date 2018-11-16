@@ -59,11 +59,9 @@ EXEC sp_updatestats
 USE [master]
 GO
 ALTER DATABASE [WideWorldImporters] SET QUERY_STORE = ON
-GO
 ALTER DATABASE [WideWorldImporters] SET QUERY_STORE (OPERATION_MODE = READ_WRITE)
-GO
 ALTER DATABASE current SET AUTOMATIC_TUNING ( FORCE_LAST_GOOD_PLAN = ON); --THIS IS THE MAGIC!
-
+GO
 ```
 
 2. Walk through the steps in [demo-full.sql](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTuning2017/demo-full.sql) to show how Auto Plan Correction Works
