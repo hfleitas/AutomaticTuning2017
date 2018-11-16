@@ -55,6 +55,17 @@ EXEC sp_updatestats
 
 1. Run the script [setup.sql](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTuning2017/setup.sql) to install some stored procedures in the WideWorldImporters database
 
+```
+USE [master]
+GO
+ALTER DATABASE [WideWorldImporters] SET QUERY_STORE = ON
+GO
+ALTER DATABASE [WideWorldImporters] SET QUERY_STORE (OPERATION_MODE = READ_WRITE)
+GO
+ALTER DATABASE current SET AUTOMATIC_TUNING ( FORCE_LAST_GOOD_PLAN = ON); --THIS IS THE MAGIC!
+
+```
+
 2. Walk through the steps in [demo-full.sql](https://github.com/hfleitas/AutomaticTuning2017/blob/master/AutomaticTuning2017/demo-full.sql) to show how Auto Plan Correction Works
 
 3. Bring up the Query Store Reports for Queries with Forced Plans to see how the plan was changed and how we forced the faster one
