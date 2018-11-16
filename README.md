@@ -110,6 +110,8 @@ Place contents of https://github.com/hfleitas/AutomaticTuning2017/tree/master/Au
 
 Follow instructions.
 
+For when you're ready [Autonomous.sql](https://github.com/hfleitas/AutomaticTuning2017/blob/master/Autonomous.sql)
+
 ## Built With
 
 * [SQL Server 2017](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) - The #1 database engine in the world.
