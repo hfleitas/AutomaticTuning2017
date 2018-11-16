@@ -25,7 +25,7 @@ begin
 end else begin select null end';
 go
 
---Monitor
+--Monitor Auto-Tuned Queries
 exec sp_msforeachdb N'use ? if db_id()>4 begin 
 select		 db_name(db_id()) as db,
 			 reason
